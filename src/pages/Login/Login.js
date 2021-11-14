@@ -1,17 +1,20 @@
 import React, { useContext, useState } from 'react';
 
+import AuthContext from '../../contexts/auth';
+
 import styles from './Login.module.css'
 
 export function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  
+  const { signIn } = useContext(AuthContext);
+
   function handleSignIn(e) {
     e.preventDefault()
 
-    console.log('salvar')
-    }
+    signIn({ email, password })
+  }
 
   return (
     <>
