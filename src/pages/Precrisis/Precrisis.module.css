@@ -1,0 +1,77 @@
+.container {
+  background-color: whitesmoke;
+  height: 100vh;
+  padding: 32px 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.recordHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recordDetails {
+  margin-top: 24px;
+}
+
+.recordTitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.recordDate {
+  color: indigo;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+.addPrecrisisButton {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 48px;
+  margin-top: 24px;
+  padding: 12px 16px;
+  text-decoration: none;
+
+  transition: background-color 0.2s;
+}
+
+.addPrecrisisButton:hover {
+  background-color: darkviolet;
+}
+
+.studentList {
+  width: 600px;
+}
+
+.studentListItem {
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 8px;
+  padding: 16px 24px;
+}
+
+.recordDetailsTitle {
+  font-weight: bold;
+  margin-top: 24px;
+}
+

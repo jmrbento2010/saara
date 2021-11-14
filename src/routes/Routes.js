@@ -6,10 +6,10 @@ import AuthContext from '../contexts/auth';
 import { Login } from '../pages/Login/Login'
 import { Home } from '../pages/Home/Home'
 import { New } from '../pages/New/New';
-import { Precrisis } from '../pages/Precrisis/Precrisis';
-import { NewPrecrisis } from '../pages/NewPrecrisis/NewPrecrisis';
 import { Crisis } from '../pages/Crisis/Crisis';
 import { NewCrisis } from '../pages/NewCrisis/NewCrisis';
+import { Precrisis } from '../pages/Precrisis/Precrisis';
+import { NewPrecrisis } from '../pages/NewPrecrisis/NewPrecrisis';
 
 function RequireAuth({ children }) {
   const { user } = useContext(AuthContext);
@@ -47,22 +47,6 @@ export const AppRoutes = () => {
         }
       />
       <Route
-        path="/precrisis/:studentId"
-        element={
-          <RequireAuth>
-            <Precrisis />
-          </RequireAuth>
-        }
-      />
-      <Route
-        path="/precrisis/:studentId/new"
-        element={
-          <RequireAuth>
-            <NewPrecrisis />
-          </RequireAuth>
-        }
-      />
-      <Route
         path="/crisis/:studentId"
         element={
           <RequireAuth>
@@ -78,6 +62,22 @@ export const AppRoutes = () => {
           </RequireAuth>
         }
       />
-    </Routes>
+
+<Route
+        path="/precrisis/:studentId"
+        element={
+          <RequireAuth>
+            <Precrisis />
+          </RequireAuth>
+        }
+      />
+      <Route
+        path="/precrisis/:studentId/new"
+        element={
+          <RequireAuth>
+            <NewPrecrisis />
+          </RequireAuth>
+        }
+      />    </Routes>
   )
 };
