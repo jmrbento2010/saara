@@ -1,0 +1,102 @@
+.container {
+  background-color: whitesmoke;
+  height: 100vh;
+  padding: 32px 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+
+.studentForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  border-radius: 4px;
+  padding: 24px 24px 24px 0;
+  width: 100%;
+  max-width: 700px;
+}
+
+.fieldGroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.studentLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  font-size: 20px;
+  margin-top: 32px;
+  margin-left: 24px;
+  width: 100%;
+}
+
+.studentInput {
+  padding: 6px 8px;
+  margin-top: 4px;
+}
+
+.radioContainer {
+  margin-left: 24px;
+  margin-top: 56px;
+  width: 100%;
+}
+
+.radioContainer input[type="radio"] {
+  margin-left: 32px;
+}
+
+.buttons {
+  margin-top: 64px;
+}
+
+.saveStudentButton {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 8px;
+  padding: 12px 16px;
+
+  transition: background-color 0.2s;
+}
+
+.saveStudentButton:hover {
+  background-color: darkviolet;
+}
+
+.cancelButton {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 8px;
+  padding: 12px 16px;
+
+  transition: background-color 0.2s;
+}
+
+.cancelButton:hover {
+  background-color: gainsboro;
+}
